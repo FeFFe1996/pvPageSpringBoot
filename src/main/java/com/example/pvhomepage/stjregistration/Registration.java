@@ -1,4 +1,4 @@
-package com.example.pvhomepage.registration;
+package com.example.pvhomepage.stjregistration;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,24 +19,17 @@ public class Registration {
     private int bakPass;
     private String msg;
 
+    public Registration(){    }
+
     public Long getId() {
         return id;
     }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getTimeStamp() {
         return timeStamp;
     }
 
     public void setTimeStamp(String timeStamp) {
         this.timeStamp = timeStamp;
-    }
-
-    public String getTeamName() {
-        return teamName;
     }
 
     public void setTeamName(String teamName) {
