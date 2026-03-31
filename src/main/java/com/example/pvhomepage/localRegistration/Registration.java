@@ -1,4 +1,4 @@
-package com.example.pvhomepage.stjregistration;
+package com.example.pvhomepage.localRegistration;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,6 +14,8 @@ public class Registration {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String timeStamp;
+    private String teamLeader;
+    private String email;
     private String teamName;
     private int stjPass;
     private int bakPass;
@@ -30,6 +32,22 @@ public class Registration {
 
     public void setTimeStamp(String timeStamp) {
         this.timeStamp = timeStamp;
+    }
+
+    public String getTeamLeader() {
+        return teamLeader;
+    }
+
+    public void setTeamLeader(String teamLeader) {
+        this.teamLeader = teamLeader;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public void setTeamName(String teamName) {
