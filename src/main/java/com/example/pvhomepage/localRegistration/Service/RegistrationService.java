@@ -1,5 +1,6 @@
 package com.example.pvhomepage.localRegistration.Service;
 
+import com.example.pvhomepage.localRegistration.repository.RegRepository;
 import org.springframework.stereotype.Service;
 
 @Service

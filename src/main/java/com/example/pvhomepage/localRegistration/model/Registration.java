@@ -1,4 +1,4 @@
-package com.example.pvhomepage.localRegistration;
+package com.example.pvhomepage.localRegistration.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

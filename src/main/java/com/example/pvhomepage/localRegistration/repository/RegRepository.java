@@ -1,6 +1,6 @@
-package com.example.pvhomepage.localRegistration.Service;
+package com.example.pvhomepage.localRegistration.repository;
 
-import com.example.pvhomepage.localRegistration.Registration;
+import com.example.pvhomepage.localRegistration.model.Registration;
 import org.springframework.data.repository.ListCrudRepository;
 import org.springframework.stereotype.Repository;
 
