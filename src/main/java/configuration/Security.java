@@ -1,8 +1,7 @@
 package configuration;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configurers.LogoutConfigurer;
 import org.springframework.security.web.SecurityFilterChain;
 
 
@@ -15,7 +14,7 @@ public class Security {
         ).formLogin(form -> form
                 .loginPage("/login")
                 .permitAll()
-        ).logout(logout -> logout.permitAll());
+        ).logout(LogoutConfigurer::permitAll);
 
         return http.build();
     }
