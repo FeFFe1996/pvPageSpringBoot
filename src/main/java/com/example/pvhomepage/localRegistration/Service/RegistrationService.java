@@ -1,4 +1,4 @@
-package com.example.pvhomepage.localRegistration;
+package com.example.pvhomepage.localRegistration.Service;
 
 import org.springframework.stereotype.Service;
 
